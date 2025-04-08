@@ -6,3 +6,7 @@ dump.py
 resize.py
 count.py
 media/
+***.html
+***.css
+***.js
+***.png
