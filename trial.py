@@ -36,7 +36,7 @@ class Pendulum(VGroup):
         y = -self.length * np.cos(self.theta)
         return self.top_point + np.array([x, y, 0])
 
-    def update_pendulum(self, dt):
+    def update_pendulum(self, dt): 
         alpha = -self.g / self.length * np.sin(self.theta) - self.damping * self.omega
         self.omega += alpha * dt
         self.theta += self.omega * dt
@@ -46,6 +46,8 @@ class Pendulum(VGroup):
 
     def get_theta(self):
         return self.theta
+    
+    
 class ThetaVsTAxes(Axes):
     def __init__(self, **kwargs):
         super().__init__(
