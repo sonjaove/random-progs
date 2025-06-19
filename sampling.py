@@ -1,5 +1,8 @@
 from manim import *
 import numpy as np
+import os 
+
+os.environ["PATH"] = os.environ["PATH"] + r";C:\Users\YOURUSER\AppData\Local\Programs\MiKTeX\miktex\bin\x64\\"
 # to demonstrate sampling and unsmapling of a signal.
 class SamplingTheorem(Scene):
 # first start by adding a time axis and the signal to the scene.
